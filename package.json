@@ -1,15 +1,17 @@
 {
-  "homepage": "http://Sarveshwaran15.github.io/gemini-clone",
+  "homepage": "https://Sarveshwaran15.github.io/gemini-clone",
   "name": "gemini-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d build"
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "@google/generative-ai": "^0.8.0",
